@@ -106,7 +106,6 @@ function WorkflowCanvas() {
       .catch((err: unknown) => {
         setError(`Layout failed: ${err instanceof Error ? err.message : String(err)}`);
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [workflow, isLayoutStale, validationErrors, unreachableIds]);
 
   // Re-annotate edges when workflow changes without re-running ELK

@@ -38,7 +38,7 @@ export function App() {
       setWorkflow(fromLink);
       useEditorStore.temporal.getState().clear();
     }
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   // Keep URL hash in sync as user edits
   useEffect(() => {

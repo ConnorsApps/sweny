@@ -101,7 +101,6 @@ export function WorkflowViewer({
         setError(`Layout failed: ${err instanceof Error ? err.message : String(err)}`);
         setLoading(false);
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [workflow, nodeWidth, nodeHeight]);
 
   useEffect(() => {
